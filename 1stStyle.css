@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5b59bd;
+}
+.container{
+    padding: 10px;
+    min-width: 1400px;
+    background: white;
+    display: flex;
+    align-items: center;
+    border: 5px solid rgb(225, 132, 122);
+}
+.line{
+    background: black;
+    width: 3.5px;
+    height: 350px;
+    margin-left: 10px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    border: 2px solid #2DD35C;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    padding-right: 100px;
+}
+
+.left-overlay{
+    width: 20%;
+    height: 320px;
+    border: 2px solid #2DD35C;
+    border-left: none;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 20px;
+}
+
+h1{
+    font-weight: 500;
+}
+span{
+    color: #5553B7;
+    font-weight: bolder;
+}
+
+h1,.btns{
+    margin: 100px 0 0 100px;
+}
+
+.btns{
+    display: flex;
+    margin-top: 20px;
+}
+
+.btn-free,.btn-book{
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    padding: 20px 30px;
+}
+
+.btn-free{
+    margin-right: 20px;
+    background: #2DD35C;
+    color: white;
+    font-weight: 500;
+    border: 2px solid #2DD35C;
+}
+.btn-free:hover{
+    background: none;
+    color: #2DD35C;
+    font-weight: 600;
+}
+
+.btn-book{
+    border: 2px solid  #5553B7;
+    color:  #1714d5;
+    font-weight: 600;
+}
+
+.btn-book:hover{
+    color: white;
+    background-color: #6a69d0;
+    border: 2px solid #6a69d0;
+    font-weight: 500;
+}
+
+.right-overlay,.right{
+    position: relative;
+    z-index: 2;
+    height: 200px;
+    background: rgba(160, 159, 235,0.7);
+    backdrop-filter: blur(3px);
+}
+.right-overlay{
+    width: 15%;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 20px;
+    margin-left: -22%;
+}
+.right{
+    width: 48%;
+}
